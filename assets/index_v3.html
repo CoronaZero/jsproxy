@@ -114,17 +114,8 @@
     }
 
     const SITE_LIST = [
-      ['google', ''],
-      ['youtube', ''],
-      ['twitter', 'twitter.com/google'],
-      ['flickr', ''],
-      ['quora', 'www.quora.com/topic/JavaScript-programming-language'],
-      ['twitch', 'www.twitch.tv/'],
-      ['reddit', ''],
+      ['Duckduckgo','duckduckgo.com/']
       ['wiki', 'zh.wikipedia.org/'],
-      ['gist', 'gist.github.com/'],
-      ['facebook', 'facebook.com/Google/'],
-      ['blogger', ''],
     ]
 
     function showIcons() {
@@ -133,7 +124,7 @@
         url = url || `www.${id}.com/`
         return `\
 <a rel="noopener noreferrer" href=./-----https://${url}>\
-<img width=128 height=128 src=__sys__/assets/ico/${id}.png></a>`
+<img width=128 height=128 src=./-----https://${url}/favicon.ico></a>`
       }).join('')
     }
 
